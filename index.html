@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Get the Javaroma App</title>
+<meta name="description" content="Get the Javaroma App. Earn 10 Java Points for every $1 spent. Keeping people awake since 1996.">
+<meta name="theme-color" content="#0a0908">
+<meta property="og:title" content="Get the Javaroma App">
+<meta property="og:description" content="Your Javaroma, right in your pocket.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://app.javaroma.ca">
+
+<script>
+/* =====================================================================
+   RAMI: THIS IS THE ONLY PART YOU EVER NEED TO EDIT.
+
+   When Apple and Google give you the real app links, paste each one
+   between the quote marks below, then click "Commit changes".
+   The buttons switch from "Coming Soon" to live automatically.
+   app.javaroma.ca and the printed QR code stay exactly the same.
+
+   Example:
+     appStore:   "https://apps.apple.com/ca/app/javaroma/id1234567890",
+   ===================================================================== */
+window.JAVAROMA_LINKS = {
+  appStore:   "",   // Apple App Store link (iPhone)
+  googlePlay: "",   // Google Play link (Android)
+
+  // Optional. Set to true ONLY after BOTH links above are filled in.
+  // Phones will then skip this page and open their own store directly.
+  autoRedirect: false
+};
+/* ===================================================================== */
+</script>
+
+<style>
+  @font-face{font-family:"Cormorant";font-weight:500;font-style:normal;font-display:swap;
+    src:url("assets/fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2")}
+  @font-face{font-family:"Cormorant";font-weight:500;font-style:italic;font-display:swap;
+    src:url("assets/fonts/cormorant-garamond-latin-500-italic.woff2") format("woff2")}
+  @font-face{font-family:"Cormorant";font-weight:600;font-style:normal;font-display:swap;
+    src:url("assets/fonts/cormorant-garamond-latin-600-normal.woff2") format("woff2")}
+
+  :root{
+    --bg:#0a0908;
+    --ink:#f3ead8;          /* cream text */
+    --ink-soft:#c9bda6;    /* secondary cream */
+    --ink-mute:#8a8070;    /* tertiary */
+    --gold:#c9a66b;
+    --gold-hi:#ecd9b0;
+    --line:rgba(201,166,107,.28);
+    --line-soft:rgba(201,166,107,.14);
+    --panel:rgba(255,248,235,.025);
+    --serif:"Cormorant",Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{background:var(--bg);-webkit-text-size-adjust:100%}
+  body{
+    min-height:100vh;min-height:100dvh;color:var(--ink);font-family:var(--sans);
+    background:
+      radial-gradient(90% 45% at 50% 0%, rgba(201,166,107,.16), transparent 70%),
+      radial-gradient(70% 35% at 50% 100%, rgba(201,166,107,.07), transparent 70%),
+      var(--bg);
+    display:flex;justify-content:center;
+    padding:calc(44px + env(safe-area-inset-top)) 24px calc(32px + env(safe-area-inset-bottom));
+    -webkit-font-smoothing:antialiased;
+  }
+  main{width:100%;max-width:420px;display:flex;flex-direction:column;align-items:center;text-align:center}
+
+  /* Logo: the original file only, never redrawn */
+  .logo{min-height:24px;margin-bottom:22px;display:flex;align-items:center;justify-content:center}
+  .logo img{display:block;max-width:min(220px,62vw);max-height:150px;width:auto;height:auto}
+  .logo.slot{width:180px;height:120px;border:1px dashed var(--line);border-radius:12px;
+    font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);padding:12px;line-height:1.6}
+
+  .since{font-family:var(--serif);font-style:italic;font-weight:500;font-size:20px;color:var(--gold-hi);letter-spacing:.01em}
+
+  .ornament{display:flex;align-items:center;gap:12px;margin:30px 0 26px;width:120px}
+  .ornament i{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+  .ornament i:last-child{background:linear-gradient(90deg,var(--gold),transparent)}
+  .ornament b{width:6px;height:6px;transform:rotate(45deg);border:1px solid var(--gold)}
+
+  h1{font-family:var(--serif);font-weight:600;text-transform:uppercase;
+     font-size:clamp(31px,9.4vw,42px);line-height:1.04;letter-spacing:.05em;
+     background:linear-gradient(180deg,var(--gold-hi) 0%,var(--gold) 100%);
+     -webkit-background-clip:text;background-clip:text;color:transparent}
+  h1 span{display:block}
+  .lead{margin-top:16px;text-wrap:balance;font-size:17px;line-height:1.5;color:var(--ink-soft)}
+
+  /* Rewards */
+  .reward{width:100%;margin-top:34px;padding:22px 22px 20px;border:1px solid var(--line);border-radius:20px;
+    background:linear-gradient(180deg,rgba(201,166,107,.08),rgba(201,166,107,.015));text-align:left}
+  .reward-top{display:flex;align-items:center;gap:16px}
+  .num{font-family:var(--serif);font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;font-weight:600;font-size:76px;line-height:.8;color:var(--gold);letter-spacing:-.02em}
+  .earn{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  .pts{font-family:var(--serif);font-weight:600;font-size:25px;line-height:1.1;color:var(--ink);margin-top:3px}
+  .per{font-size:15px;color:var(--ink-soft);margin-top:2px}
+  .reward p{text-wrap:pretty;margin-top:18px;padding-top:16px;border-top:1px solid var(--line-soft);font-size:15px;line-height:1.5;color:var(--ink-soft)}
+
+  /* Store buttons */
+  .stores{width:100%;margin-top:22px;display:flex;flex-direction:column;gap:12px}
+  .store{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:72px;
+    padding:14px 18px 14px 22px;border-radius:16px;border:1px solid var(--line);background:var(--panel);
+    color:var(--ink);text-decoration:none;text-align:left;-webkit-tap-highlight-color:transparent;
+    transition:transform .15s ease,background .2s ease}
+  .store .s{display:block;font-size:12.5px;color:var(--ink-mute);letter-spacing:.02em}
+  .store .b{display:block;font-size:20px;font-weight:600;letter-spacing:.005em;margin-top:1px;white-space:nowrap}
+  .store .tag{flex:none;font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;
+    padding:8px 12px;border-radius:999px;border:1px solid var(--line);color:var(--gold)}
+  .store[aria-disabled="true"]{cursor:default}
+  .store.live{background:linear-gradient(180deg,var(--gold-hi),var(--gold));border-color:transparent;color:#17120a}
+  .store.live .s{color:#4a3c22}
+  .store.live .tag{background:#17120a;color:var(--gold-hi);border-color:#17120a}
+  .store.live:active{transform:scale(.985)}
+  .store.mine{order:-1}
+  .status{margin-top:16px;font-size:13.5px;color:var(--ink-mute);line-height:1.5}
+
+  footer{margin-top:52px;padding-top:24px;width:100%;border-top:1px solid var(--line-soft)}
+  .name{font-family:var(--serif);font-weight:500;font-size:19px;color:var(--ink)}
+  .place{margin-top:6px;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-mute)}
+
+
+  /* Snappy credit: small and subtle */
+  .credit{margin-top:34px;display:flex;flex-direction:column;align-items:center;gap:10px}
+  .credit-label{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-mute)}
+  .credit a{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:4px 8px;opacity:.85;transition:opacity .2s}
+  .credit a:active,.credit a:hover{opacity:1}
+  .credit img{display:block;height:22px;width:auto;max-width:140px}
+  .snappy-word{font-size:15px;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);border-bottom:1px solid var(--line);padding-bottom:2px}
+  .credit .slot{height:30px;padding:0 14px;display:flex;align-items:center;border:1px dashed var(--line);border-radius:8px;
+    font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute)}
+
+  @media (prefers-reduced-motion:no-preference){
+    main>*{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+    main>*:nth-child(2){animation-delay:.05s} main>*:nth-child(3){animation-delay:.1s}
+    main>*:nth-child(4){animation-delay:.15s} main>*:nth-child(5){animation-delay:.2s}
+    main>*:nth-child(6){animation-delay:.25s} main>*:nth-child(7){animation-delay:.3s}
+    @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  }
+  @media (max-width:340px){ body{padding-left:18px;padding-right:18px} .num{font-size:64px} .store{padding-left:18px} }
+</style>
+</head>
+<body>
+<main>
+  <p class="since">Keeping people awake since 1996</p>
+
+  <div class="ornament" aria-hidden="true"><i></i><b></b><i></i></div>
+
+  <h1><span>Get the</span><span>Javaroma App</span></h1>
+
+  <p class="lead">Your Javaroma, right in your pocket.</p>
+
+  <section class="reward" aria-label="Java Points">
+    <div class="reward-top">
+      <div class="num">10</div>
+      <div>
+        <div class="earn">Earn</div>
+        <div class="pts">Java Points</div>
+        <div class="per">for every $1 spent</div>
+      </div>
+    </div>
+    <p>Get rewards, offers and more with the Javaroma App.</p>
+  </section>
+
+  <div class="stores">
+    <a class="store" id="btn-apple" aria-disabled="true">
+      <span><span class="s">Download on the</span><span class="b">App Store</span></span>
+      <span class="tag">Coming Soon</span>
+    </a>
+    <a class="store" id="btn-google" aria-disabled="true">
+      <span><span class="s">Get it on</span><span class="b">Google Play</span></span>
+      <span class="tag">Coming Soon</span>
+    </a>
+  </div>
+  <p class="status" id="status">Launching soon for iPhone and Android.</p>
+
+  <footer>
+    <div class="name">Javaroma Gourmet Coffee &amp; Tea</div>
+    <div class="place">Yellowknife, NT</div>
+    <div class="credit">
+      <div class="credit-label">App &amp; Rewards powered by</div>
+      <a id="snappy-link" href="https://gosnappy.io" target="_blank" rel="noopener"><span class="snappy-word">Snappy</span></a>
+    </div>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var L = window.JAVAROMA_LINKS || {};
+  var ua = navigator.userAgent || "";
+  var isIOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var isAndroid = /Android/i.test(ua);
+
+  function activate(id, url, label){
+    url = (url || "").trim();
+    if (!/^https:\/\//.test(url)) return false;
+    var b = document.getElementById(id);
+    b.href = url; b.rel = "noopener"; b.removeAttribute("aria-disabled"); b.classList.add("live");
+    b.querySelector(".tag").textContent = label;
+    return true;
+  }
+  var a = activate("btn-apple", L.appStore, "Download");
+  var g = activate("btn-google", L.googlePlay, "Get it");
+
+  if (isIOS) document.getElementById("btn-apple").classList.add("mine");
+  if (isAndroid) document.getElementById("btn-google").classList.add("mine");
+
+  var s = document.getElementById("status");
+  if (a && g) s.textContent = "Available now for iPhone and Android.";
+  else if (a) s.textContent = "Now on the App Store. Google Play is coming soon.";
+  else if (g) s.textContent = "Now on Google Play. The App Store is coming soon.";
+
+  if (L.autoRedirect && a && g && !/[?&]stay/.test(location.search)) {
+    if (isIOS) location.replace(L.appStore);
+    else if (isAndroid) location.replace(L.googlePlay);
+  }
+
+  document.querySelectorAll('.store[aria-disabled="true"]').forEach(function(el){
+    el.addEventListener("click", function(e){ e.preventDefault(); });
+  });
+})();
+</script>
+</body>
+</html>
