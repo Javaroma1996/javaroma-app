@@ -70,8 +70,8 @@ window.JAVAROMA_LINKS = {
   main{width:100%;max-width:420px;display:flex;flex-direction:column;align-items:center;text-align:center}
 
   /* Logo: the original file only, never redrawn */
-  .logo{min-height:24px;margin-bottom:22px;display:flex;align-items:center;justify-content:center}
-  .logo img{display:block;max-width:min(220px,62vw);max-height:150px;width:auto;height:auto}
+  .logo{margin-bottom:26px;display:flex;align-items:center;justify-content:center}
+  .logo img{display:block;height:156px;width:auto;clip-path:inset(0.88% 1.11%)}
   .logo.slot{width:180px;height:120px;border:1px dashed var(--line);border-radius:12px;
     font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);padding:12px;line-height:1.6}
 
@@ -125,9 +125,8 @@ window.JAVAROMA_LINKS = {
   /* Snappy credit: small and subtle */
   .credit{margin-top:34px;display:flex;flex-direction:column;align-items:center;gap:10px}
   .credit-label{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-mute)}
-  .credit a{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:4px 8px;opacity:.85;transition:opacity .2s}
-  .credit a:active,.credit a:hover{opacity:1}
-  .credit img{display:block;height:22px;width:auto;max-width:140px}
+  .credit a{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:4px 8px}
+  .credit img{display:block;height:34px;width:auto}
   .snappy-word{font-size:15px;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);border-bottom:1px solid var(--line);padding-bottom:2px}
   .credit .slot{height:30px;padding:0 14px;display:flex;align-items:center;border:1px dashed var(--line);border-radius:8px;
     font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute)}
@@ -144,6 +143,8 @@ window.JAVAROMA_LINKS = {
 </head>
 <body>
 <main>
+  <div class="logo"><img src="assets/javaroma-logo.png" width="542" height="682" alt="Javaroma"></div>
+
   <p class="since">Keeping people awake since 1996</p>
 
   <div class="ornament" aria-hidden="true"><i></i><b></b><i></i></div>
@@ -181,7 +182,7 @@ window.JAVAROMA_LINKS = {
     <div class="place">Yellowknife, NT</div>
     <div class="credit">
       <div class="credit-label">App &amp; Rewards powered by</div>
-      <a id="snappy-link" href="https://gosnappy.io" target="_blank" rel="noopener"><span class="snappy-word">Snappy</span></a>
+      <a id="snappy-link" href="https://gosnappy.io" target="_blank" rel="noopener" aria-label="Snappy website"><img src="assets/snappy-logo.png" width="1152" height="368" alt="Snappy"></a>
     </div>
   </footer>
 </main>
